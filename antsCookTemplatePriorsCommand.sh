@@ -53,8 +53,8 @@ brainstemLabels=( 35 )
 cerebellumLabels=( 11 38 39 40 41 71 72 73 )
 
 tmp=${OUT_DIR}/tmpForRelabeling.nii.gz
-malf=${OUT_DIR}/antsMalfLabels.nii.gz
-malf6=${OUT_DIR}/antsMalf_6Labels.nii.gz
+malf=${OUT_DIR}/antsLabels.nii.gz
+malf6=${OUT_DIR}/ants6Labels.nii.gz
 
 ThresholdImage 2 $malf $malf6 100 207 2 0
 
