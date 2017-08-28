@@ -28,7 +28,7 @@ ${ANTSPATH}/ImageMath 2 $templateBrain m $templateBrainMask $INPUT_TEMPLATE
 # Do malf labeling on extracted template brain.  This is used to get the rest of the priors
 # including part of the csf prior.
 
-command="${ANTSPATH}/antsMalfLabeling.sh -d 2 -k 0 -o ${OUT_DIR}/ants"
+command="${ANTSPATH}/antsJointLabelFusion.sh -d 2 -k 0 -o ${OUT_DIR}/ants"
 command="$command -t $templateBrain"
 for i in `ls ${MALF_DIR}/*Labels*`;
   do
